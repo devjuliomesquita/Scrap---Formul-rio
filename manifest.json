@@ -1,0 +1,11 @@
+{
+    "name": "MobWire Formulario",
+    "description": "Formulários editáveis para o setor de Pré Vendas!!!",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "permissions": ["tabs", "scripting","activeTab", "storage", "unlimitedStorage"],
+    "action": {
+        "default_icon": "assets/icon.png",
+        "default_popup": "index.html"
+    }
+}

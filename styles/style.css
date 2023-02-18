@@ -1,0 +1,75 @@
+body{
+    width: 700px;
+    overflow-x: hidden !important;
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+
+h1{
+    font-weight: bolder !important;
+}
+span{
+    font-style: italic;
+    color: #FCA311;
+}
+#navbar{
+    background-color: #242423;
+    padding: 7px 0px;
+    box-shadow: 2px 5px 3px grey;
+
+    font-size: large;
+    justify-content: center;
+    text-align: center;
+}
+
+.content{
+    padding: 40px 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-formfor{
+    background-color: #FCA311 !important;
+    font-weight: bolder;
+    width: 50%;
+}
+.btn-formfor1{
+    background-color: #FCA311 !important;
+    font-weight: bolder;
+    width: 100%;
+}
+#link-conteiner{
+    margin-top: 30px;
+}
+.link-header{
+    background-color: #242423;
+    border: 1px solid #242423;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 3px 3px rgb(180,180,180);
+    width: 30px !important;
+    margin-bottom: 15px;
+}
+.link-body{
+    border: 1px solid #242423;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 1px 3px 3px rgb(180,180,180);
+    padding: 10px 0px 10px 30px !important;
+    margin-bottom: 15px;
+}
+.link-title{
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-align: left;
+}
+.link-chamado{
+    font-size: 0.5 em;
+    font-weight: bolder;
+    text-align: left;
+}
+.btn-nopadding{
+    padding: 0px !important;
+}
+.teste{
+    background-color: white;
+    border-width: 0px;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- link da pág de estilização -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- link para a font do gooogle -->
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <link rel="stylesheet" href="./styles/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <!--Inicio da NavBar -->
+    <div id="navbar" class="row">
+        <div class="col-2">
+            <img src="./assets/icon.png" alt="" width="30">
+        </div>
+        <div class="col">
+            
+        </div>
+        <div class="col">
+            <div class="row ">
+                <div class="col ">
+                    <button id="btnPageAdd" class="btn btn-warning btn-sm"></i></i> Novo Formulário <i class="fa-solid fa-plus"></i></button>
+                    <button id="btnPageSearch" class="btn  btn-warning btn-sm"> Histórico <i class="fa-solid fa-list-check"></i></button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <!-- Fim da NavBar -->
+
+    <!-- Inicio da Página do cliente -->
+    <div id="add-page" class="content">
+        <h1><span>MobWire</span> Formulário facilidades.</h1>
+        <div class="row gy-3">
+            <form action="" class="row g-2">
+                <h3>Dados do Cliente</h3>
+                <div class="form-group col-12">
+                    <input type="text" id="form-cliente-nome" class="form-control form-control-sm" placeholder="Nome do Cliente" required>
+                </div>
+                <div class="form-group col-12">
+                    <input type="text" id="form-cliente-endereco" class="form-control form-control-sm" placeholder="Endereço" required>
+                </div>
+                <div class="form-group col-6">
+                    <input type="text" id="form-cliente-servico" class="form-control form-control-sm" placeholder="Serviço" required>
+                </div>
+                <div class="form-group col-3">
+                    <input type="text" id="form--cliente-tecnologia" class="form-control form-control-sm" placeholder="Tecnologia" required>
+                </div>
+                <div class="form-group col-3">
+                    <input type="text" id="form-cliente-velocidade" class="form-control form-control-sm" placeholder="Velocidade" required>
+                </div>
+                <div class="form-group col-12">
+                    <input type="text" id="form-cliente-chamado" class="form-control form-control-sm" placeholder="Número do Chamado" required>
+                </div>
+
+                <div class="">
+                    <button id="form-get-cliente-dados" class="btn btn-sm btn-dark btn-formfor">Carregar Cliente <i class="fa-solid fa-spinner"></i></button>
+                </div>
+
+                <h3>Dados do Técnico</h3>
+                <div class="form-group col-12">
+                    <input type="text" id="form-tec-nome" class="form-control form-control-sm" placeholder="Nome do Técnico">
+                </div>
+                <div class="form-group col-6">
+                    <input type="tel" id="form-tec-telefone" class="form-control form-control-sm" placeholder="Telefone do Técnico">
+                </div>
+                <div class="form-group col-6">
+                    <input type="email" id="form-tec-email" class="form-control form-control-sm" placeholder="E-mail do Técnico">
+                </div>
+            </form>
+            <div class="">
+                <button id="form-serv-button" class="btn btn-sm btn-dark btn-formfor">Serviços <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Fim da Página do cliente -->
+
+    <!-- Inicio da Página de Serviços -->
+    <div id="sevice-page" class="content" style="display: none" >
+        <h1>Selecione -> <span>Serviços / Rede</span></h1>
+            <div class="row g-2 justify-content-center">
+                    <div class="col-12">
+                        <div class="row g-2 justify-content-center">
+                            
+                            <div class="col-5">
+                                <select id="select-serv" class="form-select form-select-sm" aria-label="Default select example">
+                                    <option selected>Selecione o Serviço</option>
+                                    <option value="1">Ativação Inicial</option>
+                                    <option value="2">Upgrade</option> 
+                                    <option value="3">Lan To Lan</option>
+                                    <option value="4">Link de Dados</option>
+                                </select>
+                            </div>
+                            <div class="col-5">
+                                <select id="select-rede" class="form-select form-select-sm" aria-label="Default select example">
+                                    <option selected>Selecione a Rede</option>
+                                    <option value="1">Própria - MOBWIRE</option>
+                                    <option value="2">Parceiro</option>
+                                </select>
+                            </div>
+                            <div class="col-2">
+                                <button id="load-forms" class="btn btn-dark btn-formfor1 btn-sm">Carregar <i class="fa-solid fa-spinner"></i></button>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <hr/>
+                    <form action="" class="row g-2">
+                    <div id="link-dados" class="col-12" style="display: none;">
+                        <div class="row g-2">
+                            <h3>Dados de abordagem</h3>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-ld-end" class="form-control form-control-sm" placeholder="Endereço de abordagem">
+                            </div>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-ld-cord" class="form-control form-control-sm" placeholder="Coordenada">
+                            </div>
+                            <div class="form-group col-6">
+                                <textarea type="text" id="form-ld-swt" class="form-control form-control-sm" placeholder="Reserva do switch"></textarea>
+                            </div>
+                            <div class="form-group col-6">
+                                <textarea type="text" id="form-ld-blIp" class="form-control form-control-sm" placeholder="Reserva do bloco de IP"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ativacao-parc" class="col-12" style="display: none;">
+                        <div class="row g-2">
+                            <h3>Dados do Parceiro</h3>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-parceiro-nome" class="form-control form-control-sm" placeholder="Parceiro">
+                            </div>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-parceiro-responsavel" class="form-control form-control-sm" placeholder="Responsável">
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" id="form-parceiro-telefone" class="form-control form-control-sm" placeholder="Telefone do Parceiro">
+                            </div>
+                            <div class="form-group col-8">
+                                <input type="text" id="form-parceiro-Email" class="form-control form-control-sm" placeholder="E-mail do Parceiro">
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="text" id="form-parceiro-nni" class="form-control form-control-sm" placeholder="NNI - Parceiro">
+                            </div>
+                            <h3>Investimento</h3>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-invest-mensal" class="form-control form-control-sm" placeholder="R$ Mensal">
+                            </div>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-invest-instal" class="form-control form-control-sm" placeholder="R$ Instalação">
+                            </div>
+                            <h3>Faturamento</h3>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-faturamento-mensal" class="form-control form-control-sm" placeholder="R$ Mensal" >
+                            </div>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-faturamento-instal" class="form-control form-control-sm" placeholder="R$ Instalação" >
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ativacao-propria" class="col-12" style="display: none;">
+                        <div class="row g-2">
+                            <h3>Dados da caixa abordada</h3>
+                            <div class="col">
+                                <select id="select-caixa" class="form-select form-select-sm" aria-label="Default select example">
+                                    <option selected>CTOE</option>
+                                    <option value="CDOE">CDOE</option>
+                                </select>
+                            </div>
+                            <div class="form-group col">
+                                <input type="text" id="form-caixa-nome" class="form-control form-control-sm" placeholder="Nome da Caixa">
+                            </div>
+                            <div class="form-group col">
+                                <input type="text" id="form-caixa-cord" class="form-control form-control-sm" placeholder="Coordenada">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea disabled="disabled" type="text" id="form-caixa-reserva-switch" class="form-control form-control-sm" placeholder="Reserva de porta - Switch"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="upgrade-propria" class="col-12" style="display: none;">
+                        <div class="row g-2">
+                            <h3>Preencha os campos</h3>
+                            <div class="form-group col">
+                                <input type="text" id="form-upgrade-vel" class="form-control form-control-sm" placeholder="Nova Velocidade">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea type="text" id="form-upgrade-facil" class="form-control form-control-sm" placeholder="Facilidades da ativação"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="lan-to-lan" class="col-12" style="display: none;">
+                        <div class="row g-2">
+                            <h3>Dados de abordagem - Ponta A</h3>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-ltl-end-pa" class="form-control form-control-sm" placeholder="Endereço da ponta A">
+                            </div>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-ltl-cord-pa" class="form-control form-control-sm" placeholder="Coordenada da ponta A">
+                            </div>
+                            <div class="form-group col">
+                                <textarea type="text" id="form-ltl-swt-pa" class="form-control form-control-sm" placeholder="Reserva do switch - ponta A"></textarea>
+                            </div>
+                            <h3>Dados de abordagem - Ponta B</h3>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-ltl-end-pb" class="form-control form-control-sm" placeholder="Endereço da ponta B">
+                            </div>
+                            <div class="form-group col-6">
+                                <input type="text" id="form-ltl-cord-pb" class="form-control form-control-sm" placeholder="Coordenada da ponta B">
+                            </div>
+                            <div class="form-group col">
+                                <textarea type="text" id="form-ltl-swt-pb" class="form-control form-control-sm" placeholder="Reserva do switch - ponta B"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-12">
+                        <textarea type="text" id="form-obs" class="form-control form-control-sm" placeholder="Observações"></textarea>
+                    </div>
+                </form>
+                <div class="col">
+                    <button id="form-button-save-copy" class="btn btn-sm btn-dark btn-formfor">Salvar Formulário <i class="fa-solid fa-floppy-disk"></i></button>
+                </div>
+            </div> 
+    </div>
+    <!-- FIm da Página de Serviços -->    
+
+    <!-- Inicio da Página de pesquisa -->
+    <div id="search-page" class="content" style="display: none;" >
+        <h1>Veja o que você salvou.</h1>
+        <hr>
+        
+        <div id="link-conteiner" class="col"></div>
+        <div id="category-conteiner" >
+            <hr>
+            <div class="task-clear-div">
+                <button id="task-clear-btn" class="btn btn-danger">Limpar todos os Scripts salvos?</button>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/all.min.js"></script>
+    <script src="./scripts/fontawesome.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
