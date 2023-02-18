@@ -445,7 +445,7 @@ const updateView = () => {
         newDivCol2row2.setAttribute("role","group");
         newDivCol2row2.setAttribute("aria-label","Basic example");
         newDivCol2row2.setAttribute("class", "gap-sm-1 btn-group btn-group-sm teste");
-       
+
         const buttonCopy = document.createElement("button");
         buttonCopy.innerHTML = "Copiar";
         buttonCopy.setAttribute("id", index + "copy");
